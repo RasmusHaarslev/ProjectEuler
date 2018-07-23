@@ -5,7 +5,7 @@ primes = Prime.first(1000)
 start = 600851475143
 factors = []
 
-while !Prime.prime?(start)  
+until Prime.prime?(start)
   primes.each do |prime|
     tmp = start.to_f / prime
     if tmp - Integer(tmp) == 0

@@ -1,4 +1,4 @@
-require '../../../support/numbers'
+require 'prime'
 
 count = 0
 prime = 0

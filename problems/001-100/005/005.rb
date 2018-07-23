@@ -1,9 +1,9 @@
-require '../../../support/numbers'
+require '../../../support/integer'
 
-multiple = 2520
+number = 2520
 
-until Support::Numbers.check_multiple(multiple)
-  multiple += 20
+until number.has_multiples?(1..20)
+  number += 20
 end
 
-puts multiple
+puts number

@@ -1,5 +1,3 @@
-difference = 1
-
 (1..332).each do |a|
   b = a+1
   c = 1000 - a - b
