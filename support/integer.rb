@@ -14,4 +14,12 @@ class Integer
   def has_multiples?(multiples)
     multiples.reduce(true) {|accum, val| accum && (self % val == 0)}
   end
+
+  def first(n)
+    self.to_s.split('').first(n).join
+  end
+
+  def product_of_digits
+    self.digits.inject(:*)
+  end
 end
