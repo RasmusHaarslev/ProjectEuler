@@ -7,7 +7,7 @@ accum = 0
 
 while fib < 4000000
   accum += fib if fib.even?
-  prev_fib, fib = Support::NumberLines.next_fib(prev_fib, fib)
+  prev_fib, fib = NumberLines.next_fib(prev_fib, fib)
 end
 
 puts accum
